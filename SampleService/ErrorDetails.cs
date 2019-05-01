@@ -2,14 +2,13 @@
 
 namespace SampleService
 {
-    internal class ErrorDetails
+    internal class GlobalErrorDetails
     {
-        public ErrorDetails()
-        {
-        }
-
+  
         public int StatusCodeContext { get; internal set; }
         public string Message { get; internal set; }
+        public int StatusCode { get; internal set; }
+
         public override string ToString()
         {
             return JsonConvert.SerializeObject(this);

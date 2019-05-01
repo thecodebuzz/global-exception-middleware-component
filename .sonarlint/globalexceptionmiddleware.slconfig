@@ -1,0 +1,15 @@
+{
+  "ServerUri": "https://sonarcloud.io/",
+  "Organization": {
+    "Key": "thecodebuzz-github",
+    "Name": "TheCodeBuzz"
+  },
+  "ProjectKey": "thecodebuzz_exceptionmiddleware",
+  "ProjectName": "exceptionmiddleware",
+  "Profiles": {
+    "CSharp": {
+      "ProfileKey": "AWpBjnNaoQGPGjAgudTn",
+      "ProfileTimestamp": "2019-03-26T01:47:46-04:00"
+    }
+  }
+}

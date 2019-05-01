@@ -17,11 +17,13 @@ namespace SampleService.Controllers
             try
             {
                 //busniess logic
+                string password = "asdas";
 
             }
-            catch
+            catch(Exception ex)
             {
-                throw new Exception(); //always throw exception.Global exception handler will catch it anyway 
+                Console.WriteLine(ex.Message);
+                throw; //always throw exception.Global exception handler will catch it anyway 
             }
            
             return new string[] { "value1", "value2" };
@@ -29,8 +31,12 @@ namespace SampleService.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public ActionResult<string> Get(Employee employee)
         {
+
+
+            employee.Name = "abcd";
+            
             return "value";
         }
 
@@ -40,16 +46,6 @@ namespace SampleService.Controllers
         {
         }
 
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+      
     }
 }

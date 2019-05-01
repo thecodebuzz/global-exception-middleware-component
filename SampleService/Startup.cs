@@ -39,8 +39,7 @@ namespace SampleService
             {
                 app.UseHsts();
             }
-            app.UseApiExceptionHandler(logger);
-
+            app.UseGloablExceptionMiddleware();
             app.UseHttpsRedirection();
             app.UseMvc();
         }
